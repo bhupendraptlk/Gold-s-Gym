@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./action.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="loginForm.css">
+    </head>
+    <body>
+        <div class="containerOut">
+            <nav class="navbar navbar-expand-lg mainNav">
+                <a class="navbar-brand navContent" href="./index.html">Gold's Gym</a>
+                <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto menuElements">
+                    <li class="nav-item">
+                      <a class="nav-link navContent" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link navContent" href="./aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link navContent" href="./gallery.html">Gallery</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link navContent" href="./careers.html">Careers</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link navContent" href="./contactUs.html">Contact Us</a>
+                      </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 mybtn">
+                      <a href="loginForm.html" class="btn">Login</a>
+                      <a href="./signUpForm.html" class="btn">Sign Up</a>
+                  </form>
+                </div>
+              </nav>
+        </div>
+        <div class="containerLogin">
+            <h2>Login</h2>
+            <div class="loginInner">
+                <div class="formMain">
+                    <form class="formOuter" name="loginForm"method="post">
+                        <div style="margin-bottom:16px">
+                            <label style="font-weight:500;">Username:</label><br>
+                            <input type="text" name="username"style="margin-top:4px"><br>
+                        </div>
+                        <div style="margin-bottom:16px">
+                            <label style="font-weight:500;">Password: </label><br>
+                            <input type="password" name="password" style="margin-top:4px">
+                        </div>
+                        <div class="submitBtn">
+                        <a><button type="submit" onclick="validateLogin()">Login</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerContent">
+                <div class="footerPre">
+                    <div class="footerContainer">
+                        <div class="footerInner">
+                            <div class="footerMenu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="./aboutUs.html">About Us</a></li>
+                                    <li><a href="./careers.html">Careers</a></li>
+                                    <li><a href="./contactUs.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="footerAddress">
+                                <address>
+                                    <strong>Gold's Gym</strong>
+                                    No 2, 1st floor<br>
+                                    Mirza House,<br>
+                                    Convent Road,<br> 
+                                    Near-HDFC Bank,<br> 
+                                    Richmond Road, <br>
+                                    Bengaluru,<br>
+                                    Karnataka 560025<br>
+                                    <abbr title="Phone">P:</abbr> (+91) 123456890
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

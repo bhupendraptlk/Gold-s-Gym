@@ -1,0 +1,67 @@
+.containerLogin{
+    background-color: #ddd;
+    overflow: hidden;
+}
+.loginInner{
+    margin: 36px auto;
+    max-width:600px;
+    border:2px solid #fff;
+    border-radius: 4px;
+    padding: 24px 24px 0 24px;
+    background-color:#fff;
+}
+.detailsMain{
+    margin-top:4px 0;
+}
+.containerLogin h2{
+    text-align: center;
+    margin: 30px;
+}
+.formOuter{
+    margin: 0 auto;
+}
+.loginInner input{
+    width: 100%;
+}
+.loginInner .formBtn{
+    text-align: center;
+    margin: 28px;
+}
+.formBtn .submitBtn{
+    border: 1px solid #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 12px;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    width: 150px;
+    background-color: #000;
+    color: #fff;
+    margin-right: 4px;
+}
+.formBtn .resetBtn{
+    border: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 12px;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    width: 150px;
+    background-color: #ddd;
+    color: #000;
+    font-weight: 500;
+}
+.formBtn .submitBtn:hover{
+    cursor: pointer;
+    background-color: #FFD700;
+    color: #000;
+    font-weight: 500;
+}
+.formBtn .resetBtn:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+}

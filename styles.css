@@ -1,0 +1,449 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.containerOut{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 50;
+    border-top: 4px solid #FFD700;
+}
+.menu{
+    padding: 16px 0;
+    overflow: hidden;
+}
+.mainNav{
+    background-color: #000;
+    gap: 16px;
+}
+.mainNav .navbar-brand{
+    color: #FFD700;
+}
+.mainNav .navbar-collapse .navbar-nav .nav-link{
+    color: #fff;
+}
+.mainNav .mybtn a{
+    background-color: #fff;
+    color: #000;
+    /* border: 1px solid #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 12px;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    font-weight: 600;
+    font-family: sans-serif; */
+}
+.mainNav .mybtn a:hover{
+    cursor: pointer;
+    border: 1px solid #FFD700;
+    background-color: #FFD700;
+}
+.mainNav .mybtn a:first-child{
+    margin-right: 8px;
+}
+.menuElements li{
+    border-bottom: 2px solid #000;
+}
+.menuElements .activeElement{
+    border-bottom: 2px solid #FFD700;
+}
+.menu ul{
+    overflow: hidden;
+    margin: 0;
+    float: left;
+}
+.menu ul li{
+    float: left;
+    list-style: none;
+    margin: 4px 0 0 32px;
+}
+.menu ul li a{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color:#FFD700;
+    text-decoration: none;
+}
+.menu .menuBtn{
+    float: right;
+    margin-top: 4px;
+}
+.menu .menuBtn .loginBtn{
+    margin-right: 4px;
+}
+.menu .menuBtn button a{
+    color: #000;
+}
+.menu .menuBtn button a:hover{
+    text-decoration: none;
+}
+.menu .menuBtn button:hover{
+    cursor: pointer;
+    border: 1px solid #FFD700;
+    background-color: #FFD700;
+}
+.slider img{
+    /* max-height: 560px; */
+    max-height: 634px;
+    object-fit: cover;
+}
+.slider .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.innerContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #ddd;
+}
+.leftContent{
+    background-color: #fff;
+    /* background-color: #FFD700; */
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    min-width: 300px;
+}
+.leftContent h1{
+    text-align: center;
+}
+.leftContent .leftContentInner ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.leftContent .leftContentInner ul li{
+    list-style-type: none;
+    margin-bottom: 4px;
+    padding: 8px;
+}
+.leftContent li:last-child{
+    margin-bottom: 0;
+}
+.leftContent li span{
+    cursor: pointer;
+    font-size: 24px;
+    font-family: monospace;
+}
+#packageSelectOne{
+    padding: 8px;
+    background-color: #FFD700;
+}
+.midContent{
+    display: flex;
+    flex: 1;
+    background-color: #fff;
+    margin: 0 13px;
+}
+.midContent h1{
+    text-align: center;
+}
+.midContentInner{
+    padding: 8px 48px;
+    width: 100%;
+}
+.packageInner{
+    margin: 8px 48px;
+}
+.midContent .buyBtn{
+    text-align: center;
+}
+/* .midContent .buyBtn a{
+    color: #fff;
+} */
+.midContent .buyBtn button{
+    border: 1px solid #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 12px;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    width: 150px;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    margin-top: 24px;
+}
+.tableContent{
+    width: 100%;
+}
+.tableContent th, .tableContent td, .tableContent tr{
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+.midContent .tableContent th, .midContent .tableContent td{
+    width: 50%;
+}
+.midContent .buyBtn a:hover{
+    text-decoration: none;
+}
+.buyBtn button:hover{
+    background-color: #FFD700;
+    border: 1px solid #FFD700;
+    cursor: pointer;
+    color: #000;
+}
+.rightContent{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 4px 24px;
+    max-width: 300px;
+}
+.rightContent h4{
+    text-align: center;
+}
+#packageOne{
+    display: block;
+}
+#packageTwo{
+    display: none;
+}
+#packageThree{
+    display: none;
+}
+.galleryContent{
+    margin-top: 8px;
+}
+.gallerySlider{
+    max-width:220px;
+    margin: 0 auto;
+}
+.gallerySlider .carousel-indicators li {
+    display: none;
+}
+.gallerySlider img{
+    min-height: 180px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.faqContent ul{
+    list-style-type: bullet;
+    padding: 8px;
+}
+.faqContent li {
+    position: relative;
+    padding-right: 40px;
+}
+.faqContent li span{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.footerContent{
+    overflow: hidden;
+    background-image: url("./img/footer/3.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 370px;
+}
+.footerPre{
+    z-index: 101;
+    overflow: hidden;
+    clear: both;
+    background-color: rgba(000, 0, 0, 0.5);
+    /* height: 100%; */
+}
+.footerContainer{
+    margin: 0 80px;
+}
+.footerInner{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+.footerMenu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footerMenu ul li{
+    margin: 8px 0;
+}
+.footerMenu li a{
+    color: #fff;
+    font-size: 20px;
+}
+.footerMenu li a:hover{
+    text-decoration: none;
+}
+.footerAddress address{
+    color: #fff;
+}
+.footerAddress address strong{
+    display: block;
+    margin-bottom: 8px;
+}
+.footerAddress address abbr{
+    text-decoration: none;
+}
+
+
+.containerAboutUs{
+    background-color: #ddd;
+    height: 100%;
+    overflow: hidden;
+}
+.aboutGym{
+    background-color: #fff;
+    padding: 16px;
+    margin: 24px 0;
+}
+.aboutGym h2{
+    margin-bottom: 16px;
+}
+.aboutGym a{
+    color: #333;
+    font-weight: 500;
+}
+.aboutGym a:hover{
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.careerGym{
+    background-color: #fff;
+    padding: 16px;
+    margin: 24px 0;
+}
+.careerGym table tr, .careerGym table th, .careerGym table td{
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+.careerGym h2{
+    margin: 24px 0;
+}
+.careerGym table{
+    margin-bottom: 8px;
+}
+.careerGym table th{
+    width: 25px;
+}
+.careerGym table th a{
+    color: #000;
+}
+.careerGym table th a:hover{
+    text-decoration: none;
+    cursor: default;
+}
+.careerGym table td a,.careerGym table td a{
+    color: #000;
+}
+.careerGym table td a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.contactOut{
+    background-color: #ddd;
+    overflow: hidden;
+}
+.contactOut .contactDetails{
+    background-color: #fff;
+    padding: 16px;
+    overflow: hidden;
+    margin: 24px 0;
+}
+.contactLeft{
+    margin-left: 16px;
+    float: left;
+}
+.contactRight{
+    float: right;
+    margin-right: 16px;
+}
+.contactDetails h1{
+    margin: 8px 0;
+}
+.contactDetails strong{
+    font-size: 18px;
+    margin: 4px 0;
+}
+.contactDetails .contactNumber,.contactDetails .contactMail{
+    margin: 8px 0;
+}
+.galleryOuter{
+    background-color: #fff;
+    padding: 16px;
+    margin: 24px 0;
+}
+.galleryOuter p{
+    margin: 16px 0 0 16px;
+}
+/* .galleryImg{
+    overflow: hidden;
+}
+.galleryImg .galleryImgOne,.galleryImg .galleryImgOne,.galleryImg .galleryImgOne{
+    float: left;
+    margin: 24px;
+}
+.galleryImg img{
+    max-width: 25%;
+} */
+.galleryOuter .galleryImg{
+    text-align: center;
+}
+.galleryOuter img{
+    width: 100%;
+    margin: 28px 0;
+}
+.hamburger, .hamburger:focus, .hamburger:active, .hamburger:focus:active{
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+.hamburger span{
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+    margin-bottom: 5px;
+    width: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .innerContent{
+        flex-direction: column;
+    }
+    .rightContent{
+        max-width: initial;
+    }
+    .midContent{
+        margin: 0px;
+    }
+    .packageInner{
+        margin: 0;
+    }
+    .footerContent{
+        height: initial;
+    }
+    .footerContainer{
+        margin: 0;
+    }
+    .footerInner{
+        margin: 0;
+        padding: 4px 16px;
+    }
+    .footerMenu li a{
+        margin: 8px 0;
+        font-size: 16px;
+    }
+    .footerAddress address{
+        font-size: 16px;
+        margin: 0;
+        text-align: right;
+    }
+}
